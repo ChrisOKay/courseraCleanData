@@ -40,8 +40,6 @@ filterData <- cbind(activity,filterData)
 
 # summarise filtered data by activity, write to file
 
-filterData %>%
-  group_by(activity) %>%
-  summarise_all(mean) %>%
-  write.table(file = fileTidy, row.name=FALSE)
-
+tidyData <- summarise_all(group_by(filterData, activity), mean)
+  
+write.table(tidyData, file = fileTidy, row.name=FALSE)
