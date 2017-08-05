@@ -7,4 +7,4 @@ To incorporate the according activity, the activities are read also and merged t
 The final dataset is called filterData.
 It is a data frame which contains all 10299 observations from both test and train datasets. As requested, the variables consist of the activity, and 9 accelerometers readings, both mean and standard devition, i.e. 18 fields in total.
 
-As a last step, the data set is summarized by ativity via mean and written to "tidyData.txt"
+As a last step, and independent data set tidyData is created to summarize filterData by activity via mean. This data set is also written to "tidyData.txt"
